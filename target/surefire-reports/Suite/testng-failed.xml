@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="kaushalBhalgamiaAcademy.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Negative Test Cases(failed)" verbose="0">
+    <classes>
+      <class name="kaushalBhalgamiaAcademy.Tests.ErrorValidationTest">
+        <methods>
+          <include name="loginInvalidPasswordValidation"/>
+          <include name="closeBrowser"/>
+          <include name="invalidProductValidation"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- kaushalBhalgamiaAcademy.Tests.ErrorValidationTest -->
+    </classes>
+  </test> <!-- Negative Test Cases(failed) -->
+  <test thread-count="5" parallel="tests" name="Positive Test Cases(failed)" verbose="0">
+    <classes>
+      <class name="kaushalBhalgamiaAcademy.Tests.standAloneTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyOrderPlaced"/>
+          <include name="submitOrder"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- kaushalBhalgamiaAcademy.Tests.standAloneTest -->
+    </classes>
+  </test> <!-- Positive Test Cases(failed) -->
+</suite> <!-- Failed suite [Suite] -->
