@@ -22,7 +22,7 @@ public class ErrorValidationTest extends BaseTest {
 		Assert.assertEquals(landingPage.getErrorMessage(), "Incorrect email or password.");
 	}
 
-	@Test
+	@Test(groups= {"ErrorHandling"})
 	public void invalidProductValidation() throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 		String requiredProduct = "ZARA COAT 3";
